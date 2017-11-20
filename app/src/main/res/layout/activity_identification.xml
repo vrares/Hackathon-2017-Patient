@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall_login"
+    tools:context="org.hackathon.activities.IdentificationActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/identification_title"
+        android:text="@string/welcome_to_trumpcare"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="@string/make_the_health_care_great_again"
+        android:layout_below="@id/identification_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:id="@+id/register_et_user"
+        android:inputType="text"
+        android:hint="@string/personal_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/register_et_pass"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@id/register_et_user"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register_btn_register_action"
+        android:text="@string/login"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/register_et_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

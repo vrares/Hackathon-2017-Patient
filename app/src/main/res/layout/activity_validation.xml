@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.hackathon.activities.ValidationActivity"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:id="@+id/validation_ll_welcome"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_validation_welcome"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_validation_name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="Bobo"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/validation_tv_pass"
+        android:text="@string/please_insert_the_password_you_were_given"
+        android:layout_below="@id/validation_ll_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/validation_et_pass"
+        android:hint="@string/password"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/validation_btn"
+        android:layout_below="@id/validation_et_pass"
+        android:layout_centerHorizontal="true"
+        android:text="@string/validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

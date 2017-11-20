@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall3"
+    tools:context="org.hackathon.activities.UserDetailsActivity"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/details_ll_welcome"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_details_welcome"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            android:text="@string/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_details_name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="Bobo"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:background="@drawable/ic_patient"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/details_ll_welcome"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/details_ll_options"
+        android:layout_below="@id/iv_user"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/details_btn_appointments"
+            android:text="@string/make_an_appointment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/details_btn_history"
+            android:text="@string/prescriptions_history"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/details_btn_sos"
+            android:text="@string/urgent_appointment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details_ll_doc_name"
+        android:layout_below="@id/details_ll_options"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_details_doc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/your_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_details_doc_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Dodo"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details_tv_address"
+        android:text="str. Electrolizei 0"
+        android:layout_below="@id/details_ll_doc_name"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/details_ll_doc_info"
+        android:layout_below="@id/details_ll_doc_name"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/details_tv_working_days"
+            android:text="M-F 08:00 - 18:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/details_tv_sat"
+            android:text="Sat 10:00 - 16:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/details_tv_sun"
+            android:text="Sun CLOSED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details_ll_reminder"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/details_ll_doc_info"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_reminder_label"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/please_remember_that_you_have_an_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_reminder_date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            tools:text="24th May - 20:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/details_btn_logout"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

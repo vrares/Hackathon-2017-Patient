@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Pacient</string>
+    <string name="personal_id">Username</string>
+    <string name="register">Register</string>
+    <string name="hello">Hello,</string>
+    <string name="please_insert_the_password_you_were_given">Please insert the password you were given</string>
+    <string name="password">Password</string>
+    <string name="validate">Validate</string>
+    <string name="appointments">Appointments</string>
+    <string name="history">History</string>
+    <string name="prescriptions">Prescriptions</string>
+    <string name="your_doctor">Your doctor -</string>
+    <string name="urgent_appointment">Urgent Appointment</string>
+    <string name="appointment">Appointment</string>
+    <string name="pick_date">Pick date</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="create_appointment">Create Appointment</string>
+    <string name="appointment_history">Appointment History</string>
+    <string name="prescriptions_history">Appointment History</string>
+    <string name="make_an_appointment">Ask for an Appointment</string>
+    <string name="allergies">Your Allergies</string>
+    <string name="welcome_to_trumpcare">Welcome to TrumpCare!</string>
+    <string name="make_the_health_care_great_again">Make the Health Care great again</string>
+    <string name="indetify">Indetify</string>
+    <string name="identify">Identify</string>
+    <string name="please_write_your_symptoms">Please write your symptoms</string>
+    <string name="prescription">Prescription #</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="medication">Medication</string>
+    <string name="prescription_interval">Prescription Interval</string>
+    <string name="please_remember_that_you_have_an_appointment">Please remember that you have an appointment on</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+</resources>
